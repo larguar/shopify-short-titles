@@ -1,5 +1,5 @@
 # Shopify Short Titles
-We can all agree that SEO is important to get people to your website. But once they're there, good design is just as important. For my shop, I wanted the best of both worlds, so I wrote some code[^1] to shorten my product titles on the shop website while they maintained their long SEO formatted names in the Shopify backend.
+We can all agree that SEO is important to get people to your website. But once they're there, good design is just as important. For my shop, I wanted the best of both worlds, so I wrote some code[^1] to shorten my product titles on the website's frontend while they maintained their long SEO-formatted titles within the Shopify Admin.
 
 ![Shopify Liquid Badge](https://img.shields.io/badge/-Shopify%20Liquid-750460)
 
@@ -13,7 +13,7 @@ We can all agree that SEO is important to get people to your website. But once t
 
 
 ## Usage
-Within the Shopify admin, I have a title format that I use across all products to better my website's SEO and ensure my products are showing up when people are searching for them online. This full title appears in several important places including order confirmation emails, packing slips, share previews, and search engine results.
+Within the Shopify Admin, I have a title format that I use across all products to better my website's SEO and ensure my products are showing up when people are searching for them online. This full title appears in several important places including order confirmation emails, packing slips, share previews, and search engine results.
 | Formula | Examples |
 | :--- | :--- |
 | `Product Name` `Product Type` by `Product Vendor` | Progress Pride Enamel Pin by Pinultimate<br>Internet Friends Enamel Pin Set by Pretty Useful Co.<br>Creator's Club Suncatcher by A Fink & Ink |
@@ -23,7 +23,7 @@ With this long format, a user can quickly identify:
 * What the product is
 * Who made the product
 
-Anyone searching for just one of those 3 things could also happen upon my shop, so it's important to have all of this information embeded within the actual product in the Shopify admin. However, once a user has clicked through to my shop, SEO's job is done and a lot of the product information becomes visual.
+Anyone searching for just one of those 3 things could also happen upon my shop, so it's important to have all of this information embeded within the actual product. However, once a user has clicked through to my shop, a lot of the product information becomes visual.
 
 Each product card includes the following:
 * Product Image
@@ -31,10 +31,10 @@ Each product card includes the following:
 * Product Vendor
 * Product Price
 
-With this new visual-prominent format, the long title ends up being redundant. We already have the product vendor listed, so we can remove that from the title. At this point, the user also knows what product they're shopping for (pins), so we can go the extra step to shorten 'enamel pin' to just 'pin':
+In this new format, the long title is redundant. We already have the product vendor listed, so we can remove that from the title. At this point, the user also knows what product they're shopping for (pins), so we can go the extra step to shorten 'enamel pin' to just 'pin':
 | Full Product Title | Short Title |
 | :--- | :--- |
-| <img width="250" alt="dog" src="https://github.com/user-attachments/assets/352fe8f1-9e26-40b6-ba69-e53c6ce83f03"><br>**Labrador Retriever Enamel Pin by Doggie Drawings**<br>Doggie Drawings<br>$15.00 | <img width="250" alt="dog" src="https://github.com/user-attachments/assets/352fe8f1-9e26-40b6-ba69-e53c6ce83f03"><br>**Labrador Retriever Pin**<br>Doggie Drawings<br>$15.00 |
+| <img width="250" alt="dog" src="https://github.com/user-attachments/assets/352fe8f1-9e26-40b6-ba69-e53c6ce83f03"><br>**Labrador Retriever Enamel Pin<br>by Doggie Drawings**<br>Doggie Drawings<br>$15.00 | <img width="250" alt="dog" src="https://github.com/user-attachments/assets/352fe8f1-9e26-40b6-ba69-e53c6ce83f03"><br>**Labrador Retriever Pin**<br>Doggie Drawings<br>$15.00 |
 
 A user scrolling through our products should be able to easily consume the content on the page, and with this short title format, we're left with a visual representation of each product that is clean and straight to the point.
 
