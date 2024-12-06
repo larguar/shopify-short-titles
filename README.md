@@ -44,22 +44,28 @@ A user scrolling through our products should be able to easily consume the conte
 
 :file_folder: **snippets/product-item.liquid**
 
-Search for `echo product.title | escape` and replace with:
+Search for `{%- when 'title' -%}` and replace `{%- liquid -%}` snippet with:
 ```
-assign fullTitle = product.title | split: " by "
-assign shortTitle = fullTitle[0] | remove: "Enamel "
-echo shortTitle | escape
+{% comment %} [LG] Short Title {% endcomment %}
+{%- liquid 
+  assign fullTitle = product.title | split: " by "
+  assign shortTitle = fullTitle[0] | remove: "Enamel "
+  echo shortTitle | escape
+-%}
+{% comment %} [LG] End Short Title {% endcomment %}
 ```
 
 :file_folder: **sections/main-product.liquid**
 
 Search for `{%- when 'title' -%}` and replace contents inside `<h1>` with:
 ```
+{% comment %} [LG] Short Title {% endcomment %}
 {%- liquid 
   assign fullTitle = product.title | split: " by "
   assign shortTitle = fullTitle[0] | remove: "Enamel "
   echo shortTitle | escape
 -%}
+{% comment %} [LG] End Short Title {% endcomment %}
 ```
 
 
